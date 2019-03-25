@@ -1,0 +1,148 @@
+@import 'base.less';
+body{
+    background-color: #f5f5f5;
+    &>div{
+        margin-bottom: 0.2rem;
+        background-color: #fff;
+    }
+}
+.hd_ad{
+    .flex(row,flex-start,flex-start);
+    &>a{
+        width: 52%;
+        height: 2.7rem;
+        box-sizing: border-box;
+            .flex(row,flex-start,flex-end);
+            border-right: 0.01rem solid #eee;
+            padding: 0.37rem 0.18rem 0.1rem 0.27rem;
+            div{
+                width: 50%;
+                height: 100%;
+                p{
+                    font-size: 0.28rem;
+                    color: rgb(255, 153, 0);
+                }
+                span{
+                    display: block;
+                    width: 120%;
+                    .font-sizes(0.24rem,.8,0,100%)
+                }
+            }
+            img{
+                width: 1.28rem;
+                height: 1.28rem;
+            }
+    }
+    &>div{
+        width: 50%;
+        height: 2.7rem;
+        .flex(column,flex-start,flex-start);
+        a{
+            .flex(row,center,center);
+            width: 100%;
+            height: 50%;
+            box-sizing: border-box;
+            p{
+                font-size: 0.28rem;
+                color: rgb(237, 102, 96);
+            }
+            span{
+                display: block;
+                width: 120%;
+                color: rgb(129, 129, 129);
+                .font-sizes(0.24rem,.8,0,100%);
+            }
+            img{
+                width: 0.76rem;
+                height: 0.76rem;
+                margin-left: 0.4rem;
+            }
+            &:first-child{
+                border-bottom: 0.01rem solid #eee;
+                p{
+                    color: rgb(27, 169, 225);
+                }
+            }
+        }
+    }
+}
+.wntj{
+    .tuijiantit{
+        .flex(column,center,center);
+        padding: 0.26rem 0 0.14rem;
+        .tuijiantit_big{
+            .flex(row,center,center);
+            em{
+                display: block;
+                width: 0.4rem;
+                height: 0.02rem;
+                background-color: #000;
+                margin: 0 0.05rem;
+            }
+            i{
+                color: #f66d6b;
+            }
+            p{
+                font-size: 0.3rem;
+                font-weight: 600;
+                padding: 0 0.04rem;
+            }
+        }
+        .tuijiantit_min{
+            .font-sizes(0.30rem,.6,50%,0);
+            color: rgb(129, 129, 129);
+        }
+    }
+}
+.tjcp{
+    width: 95%;
+    margin: 0 auto;
+    .flex(row,space-between,flex-start);
+    flex-wrap: wrap;
+    .tjcpd{
+        .flex(column,flex-start,center);
+        border: 0.01rem solid #eee;
+        margin-bottom: 0.15rem;
+        img{
+            width: 2.94rem;
+            height: 2.94rem;
+        }
+        .tjcpd_d{
+            width: 90%;
+            p{
+                .font-sizes(0.16rem,.8,0,50%);
+                color: rgb(129, 129, 129);
+            }
+            .tjcpd_pj{
+                border-bottom: 0.02rem dashed #ccc;
+                color: #ff6000;
+                i{
+                    display: inline-block;
+                    .font-sizes(0.16rem,.8,0,100%);
+                }
+                strong{
+                    margin-left: -0.1rem;
+                }
+                span{
+                    display: inline-block;
+                    padding: 0 0.05rem;
+                    .border-r(.05rem);
+                    border: 0.01rem solid #f66d6b;
+                    color: #f66d6b;
+                    .font-sizes(0.18rem,.7,0,50%);
+                }
+            }
+            .tjcpd_dp{
+                .flex(row,flex-start,center);
+                padding: 0.15rem 0;
+            }
+        }
+        
+    }
+    .tjgd{
+        text-align: center;
+        width: 100%;
+        color: rgb(129, 129, 129);
+        padding: 0.1rem 0 0.2rem;
+    }
+}

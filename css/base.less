@@ -1,0 +1,139 @@
+body,html,p,ul,li,ol,h1,h2,h3,h4,h5,h6,button,input{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    font-family: 'Helvetica Neue',Tahoma,Arial,PingFangSC-Regular,'Hiragino Sans GB','Microsoft Yahei',sans-serif;
+    width: 100%;
+    height: auto;
+}
+body{
+    font-size: 0.28rem;
+    padding-bottom: 0.8rem;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: rgb(129, 129, 129);
+    text-decoration: none;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+}
+i{
+    font-style: normal;
+}
+button{
+    border: none;
+    outline: none;
+    background-color: #fff;
+}
+//边框弧度
+.border-r(@nub){
+    border-radius: @nub;
+}
+// 突破底线的字体大小
+.font-size(@size,@nub){
+    font-size:@size;
+    transform:scale(@nub);
+}
+.font-sizes(@size,@nub,@x,@y){
+    font-size:@size;
+    transform:scale(@nub);
+    transform-origin: @x @y;
+}
+// 弹性盒子
+.flex(@fx,@fs,@cz){
+    display: flex;
+    flex-direction: @fx;
+    justify-content: @fs;
+    align-items: @cz;
+}
+// 图标
+.icon{
+    .flex(row,center,center);
+}
+//品牌
+.iconpp{
+    .font-size(0.12rem,.9);
+    display: inline-block;
+    color: #6f3f15;
+    padding: 0.02rem 0.05rem;
+    .border-r(0.05rem);
+    background-image: linear-gradient(-139deg,#fff100,#ffe339);
+}
+//种类
+.iconzl{
+    .font-size(0.12rem,.8);
+    display: inline-block;
+    color: rgb(102, 102, 102);
+    padding: 0.01rem 0.05rem;
+    .border-r(0.05rem);
+    background-color: transparent;
+    border: 0.01rem solid rgb(221, 221, 221);
+}
+// 特首
+.iconts(@color){
+    display: inline-block;
+    .border-r(0.05rem);
+    color: #fff;
+    margin-right: 0.1rem;
+    padding: 0.02rem 0.04rem;
+    background-color: @color;
+}
+// swiper
+.swiper-container{
+    width: 100%;
+    height: 100%;
+    .slide{
+        width: 100%;
+        box-sizing: border-box;
+        height: 100%;
+        .flex(row,flex-start,flex-start);
+        flex-wrap: wrap;
+    }
+}
+.pagination{
+    span{
+        width: 0.2rem;
+        height: 0.02rem;
+        border-radius: 0;
+    }
+}
+
+.iconfaxian,.icondindan,.iconuser{
+    font-weight: 800
+}
+// 底栏
+.fnav{
+    position: fixed;
+    z-index: 999;
+    background-color: #fff;
+    .flex(row,flex-start,center);
+    bottom: 0;
+    width: 100%;
+    height: 0.86rem;
+    box-shadow: 0 -0.01rem 0.05rem rgba(0,0,0,.1);
+    div{
+        .flex(row,flex-start,center);
+        width: 25%;
+        height: 100%;
+        a{
+            font-size: 0.08rem;
+            .flex(column,center,center);
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            .icon{
+                margin-top: 0.1rem;
+            }
+            p{
+                .font-size(0.26rem,.7);
+            }
+            &.clca{
+                color: #0089dc;
+            }
+        }
+    }
+}

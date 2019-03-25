@@ -1,0 +1,250 @@
+body,
+html,
+p,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-family: 'Helvetica Neue', Tahoma, Arial, PingFangSC-Regular, 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif;
+  width: 100%;
+  height: auto;
+}
+body {
+  font-size: 0.28rem;
+  padding-bottom: 0.8rem;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: #818181;
+  text-decoration: none;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+i {
+  font-style: normal;
+}
+button {
+  border: none;
+  outline: none;
+  background-color: #fff;
+}
+.icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.iconpp {
+  font-size: 0.12rem;
+  transform: scale(0.9);
+  display: inline-block;
+  color: #6f3f15;
+  padding: 0.02rem 0.05rem;
+  border-radius: 0.05rem;
+  background-image: linear-gradient(-139deg, #fff100, #ffe339);
+}
+.iconzl {
+  font-size: 0.12rem;
+  transform: scale(0.8);
+  display: inline-block;
+  color: #666666;
+  padding: 0.01rem 0.05rem;
+  border-radius: 0.05rem;
+  background-color: transparent;
+  border: 0.01rem solid #dddddd;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-container .slide {
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.pagination span {
+  width: 0.2rem;
+  height: 0.02rem;
+  border-radius: 0;
+}
+.iconfaxian,
+.icondindan,
+.iconuser {
+  font-weight: 800;
+}
+.fnav {
+  position: fixed;
+  z-index: 999;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+  height: 0.86rem;
+  box-shadow: 0 -0.01rem 0.05rem rgba(0, 0, 0, 0.1);
+}
+.fnav div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 25%;
+  height: 100%;
+}
+.fnav div a {
+  font-size: 0.08rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.fnav div a .icon {
+  margin-top: 0.1rem;
+}
+.fnav div a p {
+  font-size: 0.26rem;
+  transform: scale(0.7);
+}
+.fnav div a.clca {
+  color: #0089dc;
+}
+body {
+  background-color: #f5f5f5;
+}
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+input::-webkit-input-placeholder {
+  color: #ddd;
+}
+.address_top {
+  text-align: center;
+  height: 0.75rem;
+  color: #fff;
+  background-image: linear-gradient(90deg, #0af, #0085ff);
+  position: relative;
+}
+.address_top span {
+  font-size: 0.3rem;
+  line-height: 0.75rem;
+  font-weight: 600;
+}
+.address_top a {
+  color: #fff;
+}
+.address_top a i {
+  position: absolute;
+  top: 0;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+.address_list {
+  padding: 0.25rem;
+  background-color: #fff;
+  border-bottom: 0.01rem solid #eee;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.address_list div {
+  flex: 1;
+}
+.address_list div p span {
+  font-size: 0.26rem;
+  color: gray;
+}
+.address_list div p span:first-child {
+  font-weight: 600;
+  color: #000;
+}
+.address_list div > span {
+  display: block;
+  color: gray;
+  padding: 0.1rem 0;
+}
+.address_list i {
+  padding: 0 0.1rem;
+}
+.add_btn {
+  color: #3190e8;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  height: 0.88rem;
+  bottom: 0;
+  border-top: 0.01rem solid #eee;
+}
+.add_form {
+  background-color: #fff;
+  padding-left: 0.25rem;
+}
+.add_list {
+  border-top: 0.01rem solid #eee;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.add_list strong {
+  display: inline-block;
+  padding: 0.23rem 0;
+  width: 1.1rem;
+}
+.add_list div {
+  flex: 1;
+  padding: 0.23rem 0;
+}
+.add_bq {
+  display: inline-block;
+  width: 1.16rem;
+  padding: 0.05rem 0;
+  text-align: center;
+  color: gray;
+  border: 0.01rem solid #eee;
+  border-radius: 0.1rem;
+  margin-right: 0.1rem;
+}
+.lxr input {
+  margin-bottom: 0.4rem;
+}
+.add_addbtn {
+  display: block;
+  margin: 0.4rem auto;
+  border-radius: 0.05rem;
+  width: 90%;
+  height: 0.74rem;
+  color: #fff;
+  background-color: #00d762;
+}
